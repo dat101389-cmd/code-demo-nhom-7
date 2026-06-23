@@ -66,9 +66,7 @@ y = [0] * len(normal_queries) + [1] * len(attack_queries)
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
-# =====================================================================
-# 2. TRÍCH XUẤT ĐẶC TRƯNG & HUÂN LUYỆN MÔ HÌNH ML
-# =====================================================================
+
 vectorizer = TfidfVectorizer(analyzer='char', ngram_range=(1, 5))
 X_train_tfidf = vectorizer.fit_transform(X_train)
 X_test_tfidf = vectorizer.transform(X_test)
