@@ -14,7 +14,7 @@ log = logging.getLogger('werkzeug')
 log.setLevel(logging.ERROR)
 
 BACKEND_HOST = "http://127.0.0.1"
-BACKEND_PORT = "8080"  
+BACKEND_PORT = "80"  
 BACKEND_URL = f"{BACKEND_HOST}:{BACKEND_PORT}"
 
 dashboard = {
